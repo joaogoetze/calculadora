@@ -1,0 +1,43 @@
+<HTML>	
+	<HEAD>
+		<SCRIPT type="text/javascript" src="js/calc.js"> </SCRIPT>
+		<link rel="stylesheet" type="text/css" href="css/calc_css.css">
+		<meta charset="utf-8">
+	</HEAD>
+	<BODY>
+		<H1 onclick="alert_function()"> Calculadora Simples </H1>
+		<div id="calc">
+			<p id="resultado"></p>
+			<table>
+				<tr>
+					<td><button id="botao1" onclick="clean()">C</button></td>
+					<td><button id="botao1" onclick="back()"><-</button></td>
+					<td><button id="botao1" onclick="insert('*')">*</button></td>
+					<td><button id="botao1" onclick="insert('/')">/</button></td>			
+				</tr>
+				<tr>
+					<td><button id="botao1" onclick="insert('7')">7</button></td>
+					<td><button id="botao1" onclick="insert('8')">8</button></td>
+					<td><button id="botao1" onclick="insert('9')">9</button></td>
+					<td><button id="botao1" onclick="insert('-')">-</button></td>			
+				</tr>
+				<tr>
+					<td><button id="botao1" onclick="insert('4')">4</button></td>
+					<td><button id="botao1" onclick="insert('5')">5</button></td>
+					<td><button id="botao1" onclick="insert('6')">6</button></td>
+					<td><button id="botao1" onclick="insert('+')">+</button></td>			
+				</tr>
+				<tr>
+					<td><button id="botao1" onclick="insert('1')">1</button></td>
+					<td><button id="botao1" onclick="insert('2')">2</button></td>
+					<td><button id="botao1" onclick="insert('3')">3</button></td>
+					<td rowspan="2"><button id="igual" style="height: 106px;" onclick="calculate()">=</button></td>				
+				</tr>
+				<tr>
+					<td colspan="2"><button id="botao1" style="width: 106px;" onclick="insert('0')">0</button></td>
+					<td><button id="botao1" onclick="insert('.')">.</button></td>	
+				</tr>
+			</table>
+		</div>
+	</BODY>
+</HTML>
